@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calzate</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1307/PNG/512/shoe_86200.png" type="image/png">
+</head>
+<body bgcolor="#FFFCF7">
+    <center><img src="./img/logo.png" alt="Logo" width="300" height="200"></center>
+    <p>Bienvenid@s a <strong>Calzate</strong> en nuestra tienda encontraras una gran variedad de calzado para dama. Hacemos envío a toda la república.</p>
+    <p>Para hacer una compra:
+    </p>
+    <ul>
+        <li>Registra tus datos personales</li>
+        <li>Coloca los datos de tu compra</li>
+        <li>Selecciona el boton de comprar</li>
+    </ul>
+    <table align="center" border="2" cellpadding="10">
+        <thead>
+                <tr>
+                    <td align="center"><strong>Modelo</strong></td>
+                    <td align="center"><strong>Tenis</strong></td>
+                    <td align="center"><strong>Botas</strong></td>
+                    <td align="center"><strong>Sandalias</strong></td>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Modelo 1</td>
+                <td><img src="https://down-mx.img.susercontent.com/file/4a72db5677b2414e4e73bc60b7b0973b" alt="Tenis" width="180" height="250" ></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kfA3WN18rsVbNcKPOGfSeypP6Hp6XQXeFg&usqp=CAU" alt="Botas" width="180" height="250" ></td>
+                <td><img src="https://http2.mlstatic.com/D_NQ_NP_637059-MLM51918156341_102022-W.jpg" alt="Sandalias" width="180" height="250" ></td>
+            </tr>
+            <tr>
+                <td>Modelo 2</td>
+                <td><img src="https://i.pinimg.com/736x/17/94/85/179485d50d3d302692a5b2fe2881dd3f.jpg" alt="Tenis" width="180" height="250" ></td>
+                <td><img src="https://i.ebayimg.com/images/g/UMsAAOSwGxBdNoOP/s-l500.jpg" alt="Botas" width="180" height="250" ></td>
+                <td><img src="https://ae01.alicdn.com/kf/Sb565e602f7d140b58b10d4a7ae5364fbh/Sandalias-de-tac-n-alto-de-seda-para-mujer-zapatos-de-gladiador-con-plataforma-gruesa-de.jpg_Q90.jpg_.webp" alt="Sandalias" width="180" height="250" ></td>
+            </tr>
+            <tr>
+                <td>Modelo 3</td>
+                <td><img src="https://i.ebayimg.com/thumbs/images/g/IqIAAOSw2sBi~-M0/s-l300.jpg" alt="Tenis" width="180" height="250" ></td>
+                <td><img src="https://i.ebayimg.com/thumbs/images/g/YNsAAOSwT9ZjEIDt/s-l300.jpg" alt="Botas" width="180" height="250" ></td>
+                <td><img src="https://i.pinimg.com/236x/ac/5f/4f/ac5f4f2e892ba496053563124313ab47.jpg" alt="Sandalias" width="180" height="250" ></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Comienza tu compra</h2>
+    <br><br>
+    <form>
+    <fieldset>
+        <legend>Datos del cliente</legend>
+            <label>Nombre:
+            <input type="text" name="nombre" required autocomplete="on"> 
+            </label>
+            <label>Apellido:
+                <input type="text" name="apellido" required autocomplete="on"> 
+            </label>
+            <br><br>
+            <label>Correo:
+                <input type="email" name="correo" required autocomplete="on" placeholder="correo@dominio.com"> 
+            </label>
+            <label>Celular:
+                <input type="tel" name="cel" maxlength="10" required autocomplete="on" placeholder="(Código de área) ----------">
+            </label>
+            <br><br>
+            <label>Dirección de domicilio:
+            </label>
+            <br><br>
+            <label>Calle: 
+                <input type="text" name="calle" required autocomplete="on">
+            </label>
+            <label>Núm. int:
+                <input type="number" name="interior">
+            </label>
+            <label>Núm. ext:
+                <input type="number" name="exterior">
+            </label>
+            <label>Colonia: 
+                <input type="text" name="Colonia" required autocomplete="on">
+            </label>
+            <br><br>
+            <label>Ciudad: 
+                <input type="text" name="ciudad" required autocomplete="on">
+            </label>
+            <label>Estado: 
+                <input type="text" name="estado" required autocomplete="on">
+            </label>
+            <br><br>
+            <textarea cols="100" rows="10">Escribe algunas referencias para localizar tu domicilio para las entregas</textarea>
+            
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos de la compra</legend>
+            <label>Categoría del zapato:
+                <br>
+                <input type="radio" name="zapato" value="tenis">Tenis
+                <br>
+                <input type="radio" name="zapato" value="botas">Botas
+                <br>
+                <input type="radio" name="zapato" value="sandalia">Sandalias
+            </label>
+            <br><br>
+            <label for="modelo">Modelo:</label>
+            <select id="modelo">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <br><br>
+            <label>Color del producto:
+                <input type="color" name="color" required>
+            </label>
+            <br><br>
+            <label>Talla:
+                <input type="radio" name="talla" value="22">22
+                <input type="radio" name="talla" value="23">23
+                <input type="radio" name="talla" value="24">24
+                <input type="radio" name="talla" value="25">25
+                <input type="radio" name="talla" value="26">26
+                <input type="radio" name="talla" value="27">27
+            </label>
+            <br><br>
+            <label for="pago">Forma de pago:
+                <select id="pago">
+                    <option value=""></option>
+                    <option value="credito">Tarjeta de crédito</option>
+                    <option value="debito">Tarjeta de debito</option>
+
+                </select>
+            </label>
+            <br><br>
+            <label>Fecha y hora de entrega deseada:
+                <input type="datetime-local" name="entrega" required>
+            </label>
+            
+    </fieldset>
+    <button type="reset">Borrar</button>
+    <button type="submit">Comprar</button>
+    </form>
+
+</body>
+</html>
