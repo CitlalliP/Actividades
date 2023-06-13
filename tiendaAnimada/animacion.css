@@ -1,0 +1,37 @@
+header{
+    background-color: darkcyan;
+}
+body{
+    background-color: mediumturquoise;
+}
+div{
+    position: relative;
+    margin: 35px 0px;
+    width: 400px;
+    height: 200px;
+    background-color: brown;
+
+    animation-name: movimiento;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+}
+.logo{
+    position: relative;
+    width: 100 px;
+    height: 100px;
+    left: 15%;
+    top: 15%;
+
+   
+}
+
+@keyframes movimiento {
+    0%{
+        left: 20 px;
+    }
+    100%{
+        left: 50px;
+    }
+}
